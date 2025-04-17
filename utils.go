@@ -1,8 +1,4 @@
-package main
-
-import (
-  "fmt"
-)
+package Go_string_utils
 
 func Int32ToString(x *int32) string {
   const base int32 = 10
@@ -15,13 +11,6 @@ func Int32ToString(x *int32) string {
     *x /= 10
   }
   return rtn_str
-}
-
-func main() {
-  var x int32 = 234
-  var rtn_str string
-  rtn_str = Int32ToString(&x)
-  fmt.Println(rtn_str)
 }
 
 
