@@ -28,3 +28,25 @@ Result:
 234
 string
 ```
+
+## StringToInt32
+
+### Usage
+
+Code: 
+
+"`fmt`" imported
+
+```
+var x string = "234"
+rtn_val := StringToInt32(x)
+fmt.Println(rtn_val)
+```
+
+Results:
+
+```
+234
+```
+
+
