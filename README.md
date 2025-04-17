@@ -35,7 +35,7 @@ string
 
 Code: 
 
-"`fmt`" imported
+`"fmt"` imported
 
 ```
 var x string = "234"
