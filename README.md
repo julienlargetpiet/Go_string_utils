@@ -1,6 +1,6 @@
 # Go_string_utils
 
-Some functions for string and number convertions
+Some functions for string and number convertions and file manipulation
 
 ## `Int32ToString()`
 
@@ -47,6 +47,33 @@ Results:
 
 ```
 234
+```
+
+## fast_diff
+
+Special implementation of the `diff` command
+
+### Usage
+
+```
+file1 := "file1.txt"
+file2 := "file2.txt"
+sep := " | "
+fast_diff(&file1, &file2, &sep)
+```
+
+Output
+
+```
+> oui |
+non | non
+>  |
+> P |
+ll | ll
+>  |
+K | K
+ | > oui
+ | >
 ```
 
 
