@@ -64,12 +64,12 @@ fast_diff(&file1, &file2, &sep)
 Output
 
 ```
-> oui |
+oui | <
 non | non
->  |
-> P |
+ | <
+P | <
 ll | ll
->  |
+ | <
 K | K
  | > oui
  | >
@@ -94,12 +94,12 @@ fmt.Println(x)
 Output
 
 ```
-> oui |
+oui | <
 non | non
->  |
-> P |
+ | <
+P | <
 ll | ll
->  |
+ | <
 K | K
  | > oui
  | >
