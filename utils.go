@@ -60,7 +60,7 @@ func fast_diff(file1 *string, file2 *string, sep *string) {
   }
   defer fileb.Close()
   scannerb := bufio.NewScanner(fileb)
-  for scannerb.Scan() && comp {
+  for comp && scannerb.Scan() {
     datab = scannerb.Text()
     scannera.Scan()
     dataa = scannera.Text()
@@ -98,7 +98,7 @@ func fast_diff2(file1 *string, file2 *string, sep *string) string {
   }
   defer fileb.Close()
   scannerb := bufio.NewScanner(fileb)
-  for scannerb.Scan() && comp {
+  for comp && scannerb.Scan() {
     datab = scannerb.Text()
     scannera.Scan()
     dataa = scannera.Text()
@@ -119,5 +119,3 @@ func fast_diff2(file1 *string, file2 *string, sep *string) string {
   }
   return rtn_str
 }
-
-
