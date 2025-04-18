@@ -77,6 +77,27 @@ K | K
  | + mm
 ```
 
+Code:
+
+```
+file1 := "file1b.txt"
+file2 := "file2b.txt"
+sep := " | "
+x := fast_diff2(&file1, &file2, &sep)
+fmt.Println(x)
+```
+
+Output:
+
+```
+oui | -
+non | non
+ | -
+ll | ll
+ll | -
+K | -
+```
+
 ## fast_diff2
 
 Same thing than `fast_diff` but returns a `string`
@@ -109,4 +130,23 @@ K | K
  | + mm
 ```
 
+Code:
 
+```
+file1 := "file1b.txt"
+file2 := "file2b.txt"
+sep := " | "
+x := fast_diff2(&file1, &file2, &sep)
+fmt.Println(x)
+```
+
+Output:
+
+```
+oui | -
+non | non
+ | -
+ll | ll
+ll | -
+K | -
+```
