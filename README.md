@@ -52,6 +52,7 @@ Results:
 ## fast_diff
 
 Special implementation of the `diff` command
+The fisrt file must be the one that have been updated.
 
 ### Usage
 
