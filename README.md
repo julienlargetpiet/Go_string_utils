@@ -64,17 +64,17 @@ fast_diff(&file1, &file2, &sep)
 Output
 
 ```
-oui | <
+oui | -
 non | non
- | <
-P | <
+ | -
+P | -
 ll | ll
- | <
+ | -
 K | K
- | > oui
- | > pp
- | > mm
- | > mm
+ | + oui
+ | + pp
+ | + mm
+ | + mm
 ```
 
 ## fast_diff2
@@ -96,17 +96,17 @@ fmt.Println(x)
 Output
 
 ```
-oui | <
+oui | -
 non | non
- | <
-P | <
+ | -
+P | -
 ll | ll
- | <
+ | -
 K | K
- | > oui
- | > pp
- | > mm
- | > mm
+ | + oui
+ | + pp
+ | + mm
+ | + mm
 ```
 
 
