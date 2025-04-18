@@ -65,19 +65,19 @@ func fast_diff(file1 *string, file2 *string, sep *string) {
     scannera.Scan()
     dataa = scannera.Text()
     for datab != dataa && scannera.Scan() {
-      fmt.Printf("%v%v <\n", dataa, *sep)
+      fmt.Printf("%v%v -\n", dataa, *sep)
       dataa = scannera.Text()
     }
     comp = (datab == dataa)
     if comp {
       fmt.Printf("%v%v%v\n", dataa, *sep, datab)
     } else {
-      fmt.Printf("%v> %v\n", *sep, datab)
+      fmt.Printf("%v+ %v\n", *sep, datab)
     }
   }
   for scannerb.Scan() {
     datab = scannerb.Text()
-    fmt.Printf("%v> %v\n", *sep, datab)
+    fmt.Printf("%v+ %v\n", *sep, datab)
   }
 }
 
@@ -103,19 +103,20 @@ func fast_diff2(file1 *string, file2 *string, sep *string) string {
     scannera.Scan()
     dataa = scannera.Text()
     for datab != dataa && scannera.Scan() {
-      rtn_str = rtn_str + dataa + *sep + "< \n"
+      rtn_str = rtn_str + dataa + *sep + "- \n"
       dataa = scannera.Text()
     }
     comp = (datab == dataa)
     if comp {
       rtn_str = rtn_str + dataa + *sep + datab + "\n"
     } else {
-      rtn_str = rtn_str + *sep + "> " + datab + "\n"
+      rtn_str = rtn_str + *sep + "+ " + datab + "\n"
     }
   }
   for scannerb.Scan() {
     datab = scannerb.Text()
-    rtn_str = rtn_str + *sep + "> " + datab + "\n"
+    rtn_str = rtn_str + *sep + "+ " + datab + "\n"
   }
   return rtn_str
 }
+
