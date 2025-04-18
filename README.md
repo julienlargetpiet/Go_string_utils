@@ -72,7 +72,9 @@ ll | ll
  | <
 K | K
  | > oui
- | >
+ | > pp
+ | > mm
+ | > mm
 ```
 
 ## fast_diff2
@@ -102,7 +104,9 @@ ll | ll
  | <
 K | K
  | > oui
- | >
+ | > pp
+ | > mm
+ | > mm
 ```
 
 
