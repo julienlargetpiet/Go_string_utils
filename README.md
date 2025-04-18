@@ -12,8 +12,6 @@ Some functions for string and number convertions and file manipulation
 
 Code: 
 
-`"fmt"` and `"reflect"` imported
-
 ```
 var x int32 = 234
 var rtn_str string
@@ -35,8 +33,6 @@ string
 
 Code: 
 
-`"fmt"` imported
-
 ```
 var x string = "234"
 rtn_val := StringToInt32(x)
@@ -56,11 +52,43 @@ The fisrt file must be the one that have been updated.
 
 ### Usage
 
+Code:
+
 ```
 file1 := "file1.txt"
 file2 := "file2.txt"
 sep := " | "
 fast_diff(&file1, &file2, &sep)
+```
+
+Output
+
+```
+> oui |
+non | non
+>  |
+> P |
+ll | ll
+>  |
+K | K
+ | > oui
+ | >
+```
+
+## fast_diff2
+
+Same thing than `fast_diff` but returns a `string`
+
+### Usage
+
+Code:
+
+```
+file1 := "file1.txt"
+file2 := "file2.txt"
+sep := " | "
+x := fast_diff2(&file1, &file2, &sep)
+fmt.Println(x)
 ```
 
 Output
