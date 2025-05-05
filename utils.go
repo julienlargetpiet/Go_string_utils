@@ -7,6 +7,9 @@ import (
 )
 
 func Int32ToString(x *int32) string {
+  if *x == 0 {
+    return "0"
+  }
   const base int32 = 10
   var remainder int32
   rtn_str := ""
