@@ -85,7 +85,7 @@ func fast_diff(file1 *string, file2 *string, sep *string) {
   if comp {
     for scannera.Scan() {
       dataa = scannera.Text()
-      rtn_str = rtn_str + dataa + *sep + "- " + "\n"
+      fmt.Printf("%v+ %v\n", *sep, datab)
     }
   }
 }
